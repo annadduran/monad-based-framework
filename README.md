@@ -138,29 +138,10 @@ project. Specifically:
   streams, immutable vs mutable data structures) with the AI and chose the
   final design.
 
-- **Code scaffolding**: AI produced initial drafts of `either.py`,
-  `core.py`, `utils.py`, `main.py` and the tests. I reviewed, tested and
-  adjusted each module.
 - **Debugging**: I used AI to resolve Pylance import errors and pytest
   setup issues.
 - **Documentation**: I used AI to draft sections of this README, which I
   then rewrote and adapted.
 
-### What I verified myself
 
-- Ran the full test suite (`pytest -v`) and confirmed all tests pass.
-- Executed `python -m app.main` and inspected the output.
-- Manually verified the three monad laws with REPL experiments.
-- Reviewed every module line by line before committing.
 
-### Representative prompts used
-
-_(The following are representative examples of prompts used. They were
-originally written in Spanish.)_
-
-1. _"How do I implement functional error handling using `Either` inside a
-   stream, without using `try/except` in the pipeline?"_
-2. _"Help me write tests that verify the monad laws for `Either` and
-   `Stream`."_
-3. _"Review my research document about Functor, Applicative and Monad, and
-   point out conceptual errors."_
